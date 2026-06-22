@@ -1,0 +1,23 @@
+IBMPROJECT/
+│
+├── backend/
+├── frontend.py
+├── .env
+├── .gitignore
+└── requirements.txt
+
+fastapi
+uvicorn
+streamlit
+requests
+pydantic
+python-dotenv
+
+langchain
+langchain-core
+langgraph
+langchain-google-genai
+langchain-tavily
+
+google-search-results
+google-generativeai
