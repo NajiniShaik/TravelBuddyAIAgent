@@ -5,7 +5,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent 
 from langgraph.checkpoint.memory import InMemorySaver 
 
-from backend.agent.tools import get_tavily_tool,search_flights 
+from agent.tools import get_tavily_tool, search_flights
 
 load_dotenv() 
 

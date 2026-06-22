@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware 
 from pydantic import BaseModel 
 
-from backend.agent.travel_agent import run_travel_agent 
+from agent.travel_agent import run_travel_agent 
 
 app=FastAPI(title="TravelBuddy AI Agent Backend") 
 
