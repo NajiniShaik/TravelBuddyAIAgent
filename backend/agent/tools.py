@@ -18,13 +18,13 @@ def search_flights(origin:str,destination:str,date:str)->list:
 
     print(f"\n[Tool Call] Searching flights from {origin} to {destination} on {date}")
 
-    serpapi_key=os.getenv("SERPAPI_KEY")
+    serpapi_key=os.getenv("SERP_API_KEY")
 
     params={
         "api_key":serpapi_key,
         "engine":"google_flights",
-        "departure_id":origin,
-        "arrival_id":destination,
+        "departure_id":origin.upper(),
+        "arrival_id":destination.upper(),
         "outbound_date":date,
         "currency":"INR",
         "type":"2"
