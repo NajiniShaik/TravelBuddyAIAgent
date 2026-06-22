@@ -4,7 +4,7 @@ import requests
 
 st.set_page_config(page_title="IBM TravelBuddy AI Agent", page_icon="",layout="wide")
 
-BACKEND_URL="http://127.0.0.1:8000/api/chat"
+BACKEND_URL="https://travelbuddyaiagent.onrender.com/api/chat"
 
 def send_message_to_backend(prompt_text:str):
     """ Sends the user query to the FastAPI backend and gets the agent's real response."""
