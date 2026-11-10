@@ -7,9 +7,9 @@ from serpapi import GoogleSearch
 def get_tavily_tool():
     tavily_api_key=os.getenv('TAVILY_API_KEY')
     return TavilySearch(
-        max_resulsts=5,
+        max_results=5,
         search_depth="advanced",
-        tavily_api_key=tavily_api_key
+        api_key=tavily_api_key
     )
 
 @tool 

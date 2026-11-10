@@ -10,7 +10,10 @@ from agent.tools import get_tavily_tool, search_flights
 load_dotenv() 
 
 
-google_api_key=os.getenv("GEMINI_API_KEY")
+google_api_key=os.getenv("GEMINI_API_KEY") 
+
+os.environ["GOOGLE_GENAI_API_VERSION"] = "v1beta"
+
 
 model=ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
