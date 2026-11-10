@@ -9,11 +9,8 @@ app=FastAPI(title="TravelBuddy AI Agent Backend")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://your-old-frontend.vercel.app",
-        "https://your-new-frontend.vercel.app"
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
